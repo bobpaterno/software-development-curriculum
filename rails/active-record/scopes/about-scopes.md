@@ -6,7 +6,7 @@
 - Rails 4 requires lambda syntax
 
 ## Why does Rails 4 require lambda syntax?
-Lambdas are evaluated when they are called and not when they are defined. If Time.now was called and a lambada was not used it would give you the time from when Time.now was defined and never change after that. Whereas when a lambda is called with Time.now it would use the time at which the lambda was called rather than when Time.now was defined.
+Lambdas are evaluated when they are called and not when they are defined. If Time.now was called and a lambada was not used it would give you the time from when Time.now was defined and never change after that. Whereas when a lambda is called with Time.now it would use the time at which the lambda was called which is when Time.now gets defined.
 
 ## Scope examples
 
@@ -25,7 +25,7 @@ Each one of these functions, when called, will search the database for models wh
 
 Scope example taking parameters:
 
-    scope :search, lambda { |query| 
+    scope :search, lambda { |query|
       where(["name LIKE ?", "%#{query}%" ])
     }
 
@@ -41,4 +41,3 @@ To call the "search" scope assuming this scope is written in a User model you wo
 ## Sources
 
 * http://www.lynda.com/Ruby-Rails-tutorials/Named-scopes/139989/159102-4.html
-
