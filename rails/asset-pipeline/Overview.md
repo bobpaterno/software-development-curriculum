@@ -1,20 +1,20 @@
-Overview of Asset Pipeline
+#Overview of Asset Pipeline
 ==========================
-Introduction to Asset Pipeline
+##What is The Asset Pipeline
 
 The asset pipeline is one of the biggest new features in Rails 3.1 that was designed to manage your Rails applications’ assets. 
 The asset pipeline provides a framework to concatenate and minify or compress JavaScript and CSS assets. 
 It also adds the ability to write these assets in other languages and pre-processors such as CoffeeScript, Sass and ERB.
 
 ==========================
-Good to know
+##Good to know
 
 *At its most basic the asset pipeline is a list of loadpaths. You can see this list by running the console and viewing Rails.application.config.assets.paths.
 
 *The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework into the sprockets-rails gem.
 
 ===========================
-A Few Notible Features
+##A Few Notible Features
 
 - Preprocessing
 
@@ -29,7 +29,7 @@ You can now add ERB code to this file and it will be processed. For example, whe
 Sprockets handles dependency management in Rails. Sprockets is a tool for managing libraries of JavaScript (and CoffeeScript) code, declaring dependency management and include 3rd-party code. At its core, Sprockets makes a require method available inside your .js and .coffee files which can pull in the contents of an external file from your project or from a 3rd party gem.
 
 
-Further Reading
+##Further Reading
 Rails Assets Pipeline Cheat Sheet (Github gist:7332590)
 Sources
 Rails Guide: The Asset Pipeline
