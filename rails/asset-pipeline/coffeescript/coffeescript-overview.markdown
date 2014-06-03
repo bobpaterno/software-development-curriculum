@@ -11,11 +11,13 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 
 ####Javascript
 ```shell
+var str = "hello"
 var number = 1; 
 var opposite = true;
 ```
 ####CoffeeScript
 ```shell
+str = "hello"
 number = 1 
 opposite = true
 ```
