@@ -1,6 +1,6 @@
 # Comsuming APIs in Rails
 
-### Before Continuing
+## Before Continuing
 
 Make sure you are familiar with RESTful Web services before using the following gems.
 
@@ -16,11 +16,13 @@ Many popular web services (Twitter, Flickr, Linkedin, etc) have gems created spe
 
 [https://www.ruby-toolbox.com/categories/api_clients](https://www.ruby-toolbox.com/categories/api_clients)
 
-### activeresouce
+## activeresouce
+
+[activeresource on Github](https://github.com/rails/activeresource)
 
 Model classes are mapped to remote REST resources by Active Resource much the same way Active Record maps model classes to database tables. When a request is made to a remote resource, a REST JSON request is generated, transmitted, and the result received and serialized into a usable Ruby object.
  
-- #### Download and installation
+### Download and installation
 
 The latest version of Active Resource can be installed with RubyGems:
 
@@ -30,7 +32,7 @@ Or added to a Gemfile:
 
   `gem 'activeresource'`
 
-- #### Configuration and Usage
+### Configuration and Usage
 
 Putting Active Resource to use is very similar to Active Record.  It's as simple as creating a model class
 that inherits from ActiveResource::Base and providing a <tt>site</tt> class variable to it:
@@ -49,15 +51,18 @@ life cycle methods that operate against a persistent store.
 As you can see, the methods are quite similar to Active Record's methods for dealing with database
 records.  But rather than dealing directly with a database record, you're dealing with HTTP resources (which may or may not be database records).
 
-[activeresource on Github](https://github.com/rails/activeresource)
 
-### httparty
+## httparty
 
-- #### Install
+[httparty on Github](https://github.com/jnunemaker/httparty)
+
+HTTParty is a Ruby library by John Nunemaker (of railstips.org fame) which allows developers to build classes that can use Web-based APIs and related services. At its simplest, you include the HTTParty module within a class, which gives your class a "get" method that can retrieve data over HTTP. Further directives, however, instruct HTTParty to parse results (XML, JSON, and so on), define base URIs for the requests, and define HTTP authentication information.
+
+### Install
 
 `gem install httparty`
 
-- #### Examples
+### Examples
 
 ```ruby
 # Use the class methods to get down to business quickly
@@ -88,13 +93,13 @@ puts stack_exchange.questions
 puts stack_exchange.users
 ```
 
-[httparty on Github](https://github.com/jnunemaker/httparty)
+## faraday
 
-### faraday
+[faraday on Github](https://github.com/lostisland/faraday)
 
 Faraday is an HTTP client lib that provides a common interface over many adapters (such as Net::HTTP) and embraces the concept of Rack middleware when processing the request/response cycle.
 
-- #### Usage
+### Usage
 
 ```ruby
 conn = Faraday.new(:url => 'http://sushi.com') do |faraday|
@@ -142,13 +147,14 @@ If you don't need to set up anything, you can roll with just the bare minimum:
 response = Faraday.get 'http://sushi.com/nigiri/sake.json'
 ```
 
-[faraday on Github](https://github.com/lostisland/faraday)
-
-
-* Item 1 with link
-* Item 2 with link
+## Further Reading
+- [Blog by httparty creator](http://www.railstips.org/blog/archives/2008/07/29/it-s-an-httparty-and-everyone-is-invited/)
+- [API Client list](https://www.ruby-toolbox.com/categories/api_clients)
+- [HTTP Client list](https://www.ruby-toolbox.com/categories/http_clients)
 
 ## Sources
 
-* Item 1 with link
-* Item 2 with link
+- [http://stackoverflow.com/questions/13114125/using-rails-to-consume-web-services-apis](http://stackoverflow.com/questions/13114125/using-rails-to-consume-web-services-apis)
+- [http://stackoverflow.com/questions/12379834/what-is-the-first-step-to-using-a-rest-api-in-rails](http://stackoverflow.com/questions/12379834/what-is-the-first-step-to-using-a-rest-api-in-rails)
+- [http://stackoverflow.com/questions/12829284/making-json-api-calls-within-rails-app](http://stackoverflow.com/questions/12829284/making-json-api-calls-within-rails-app)
+- [http://stackoverflow.com/questions/5386232/consuming-rest-api-from-rails-application](http://stackoverflow.com/questions/5386232/consuming-rest-api-from-rails-application)
