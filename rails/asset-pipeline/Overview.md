@@ -7,7 +7,7 @@ The asset pipeline provides a framework to concatenate and minify or compress Ja
 It also adds the ability to write these assets in other languages and pre-processors such as CoffeeScript, Sass and ERB.
 
 ==========================
-##Good to know
+##Good To Know
 
 *At its most basic the asset pipeline is a list of loadpaths. You can see this list by running the console and viewing Rails.application.config.assets.paths.
 
@@ -18,8 +18,11 @@ It also adds the ability to write these assets in other languages and pre-proces
 
 - Preprocessing
 
-Is handled by the "Tilt" gem. To utilize preprocessing you'll add another extension to a static file's name and specify a processor, for example .erb. 
-You can now add ERB code to this file and it will be processed. For example, when a file has an .scss extension this is treated as a preprocessor extension and the file will be passed through the SASS processor. 
+The file extensions used on an asset determine what preprocessing is applied. In development mode, or if the asset pipeline is disabled, when these files are requested they are processed by the processors provided by the coffee-script and sass gems and then sent back to the browser as JavaScript and CSS respectively. When asset pipelining is enabled, these files are preprocessed and placed in the public/assets directory for serving by either the Rails app or web server.
+
+Preprocessing is handled by the "Tilt" gem. To utilize preprocessing you'll add another extension to a static file's name and specify a processor, for example .erb.You can now add ERB code to this file and it will be processed. For example, when a file has an .scss extension this is treated as a preprocessor extension and the file will be passed through the SASS processor. 
+
+Keep in mind the order of these preprocessors is important. For example, if you called your JavaScript file app/assets/javascripts/projects.js.erb.coffee then it would be processed with the CoffeeScript interpreter first, which wouldn't understand ERB and therefore you would run into problems.
 
 (erb stands for "Embedded RuBy". A .html.erb or .erb.html file is HTML with Ruby code embedded in; Rails will evaluate the Ruby to add content to the file dynamically, and will output a "pure" HTML file for rendering.)
 
