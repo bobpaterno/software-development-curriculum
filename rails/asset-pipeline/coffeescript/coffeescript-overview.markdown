@@ -11,7 +11,7 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 
 ####Javascript
 ```javascript
-var str = "hello"
+var str = "hello";
 var number = 1; 
 var opposite = true;
 ```
