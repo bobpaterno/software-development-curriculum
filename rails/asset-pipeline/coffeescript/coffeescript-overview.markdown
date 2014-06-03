@@ -7,9 +7,9 @@ Python and Ruby and implements many features from those two languages; the Coffe
 readable. It also allows you to use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa).
 The compiled output is readable and pretty-printed, will work in every JavaScript runtime, and tends to run as fast or faster than the equivalent handwritten JavaScript.
 
-## Overview
-#### Comparing CoffeeScript to Javascript
-Assignment # <br>
+## Comparing CoffeeScript to Javascript
+### Assignments
+
 -Javascript- <br>
 var number = 1; <br>
 var opposite = true; <br>
@@ -18,6 +18,7 @@ var opposite = true; <br>
 number = 1 <br>
 opposite = true <br>
 
+### Functions
 more to come....
 
 ## Further Reading
