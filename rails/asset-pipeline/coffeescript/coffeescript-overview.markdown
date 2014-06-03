@@ -10,13 +10,13 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 ### Assignments
 
 ####Javascript
-```ruby
+```javascript
 var str = "hello"
 var number = 1; 
 var opposite = true;
 ```
 ####CoffeeScript
-```ruby
+```javascript
 str = "hello"
 number = 1 
 opposite = true
@@ -24,35 +24,35 @@ opposite = true
 ### Conditions
 
 ####Javascript
-```ruby
+```javascript
 if (opposite) { 
   number = -42; 
 } 
 ```
 ####CoffeeScript
-```shell
+```javascript
 number = -42 if opposite
 ```
 ### Functions
 
 ####Javascript
-```shell
+```javascript
 function square(x) { 
   return x * x; 
 }; 
 ```
 ####CoffeeScript
-```shell
+```javascript
 square = (x) -> x * x
 ```
 ###Arrays
 
 ####Javascript
-```shell
+```javascript
 var stuff = [1, 2, 3, 4, 5];
 ```
 ####CoffeeScript
-```shell
+```javascript
 stuff = [1, 2, 3, 4, 5]
 ```
 ## Installation
