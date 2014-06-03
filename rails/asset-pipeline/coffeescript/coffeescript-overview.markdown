@@ -15,7 +15,7 @@ var str = "hello";
 var number = 1; 
 var opposite = true;
 ```
-*CoffeeScript*
+**CoffeeScript**
 ```javascript
 str = "hello"
 number = 1 
@@ -23,35 +23,35 @@ opposite = true
 ```
 ### Conditions
 
-####Javascript
+**Javascript**
 ```javascript
 if (opposite) { 
   number = -42; 
 } 
 ```
-####CoffeeScript
+**CoffeeScript**
 ```javascript
 number = -42 if opposite
 ```
 ### Functions
 
-####Javascript
+**Javascript**
 ```javascript
 function square(x) { 
   return x * x; 
 }; 
 ```
-####CoffeeScript
+**CoffeeScript**
 ```javascript
 square = (x) -> x * x
 ```
 ###Arrays
 
-####Javascript
+**Javascript**
 ```javascript
 var stuff = [1, 2, 3, 4, 5];
 ```
-####CoffeeScript
+**CoffeeScript**
 ```javascript
 stuff = [1, 2, 3, 4, 5]
 ```
