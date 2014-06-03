@@ -10,10 +10,10 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 ## Comparing CoffeeScript to Javascript
 ### Assignments
 
-####Javascript CoffeeScript
+####Javascript
 ```shell
-var number = 1; <br>
-var opposite = true; <br>
+var number = 1; 
+var opposite = true;
 ```
 ####CoffeeScript
 ```shell
@@ -23,31 +23,37 @@ opposite = true <br>
 ### Conditions
 
 ####Javascript
+```shell
 if (opposite) { <br>
   number = -42; <br>
 } <br>
-
+```
 ####CoffeeScript
+```shell
 number = -42 if opposite
-
+```
 ### Functions
 
 ####Javascript
+```shell
 function square(x) { <br>
   return x * x; <br>
 }; <br>
-
+```
 ####CoffeeScript
+```shell
 square = (x) -> x * x
-
+```
 ###Arrays
 
 ####Javascript
+```shell
 var stuff = [1, 2, 3, 4, 5];
-
+```
 ####CoffeeScript
+```shell
 stuff = [1, 2, 3, 4, 5]
-
+```
 ## Further Reading
 
 * [RailsCasts CoffeeScript Tutorial](http://railscasts.com/episodes/267-coffeescript-basics)
