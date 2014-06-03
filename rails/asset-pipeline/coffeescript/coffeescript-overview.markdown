@@ -18,8 +18,33 @@ var opposite = true; <br>
 number = 1 <br>
 opposite = true <br>
 
+### Conditions
+
+####Javascript
+if (opposite) { <br>
+  number = -42; <br>
+} <br>
+
+####CoffeeScript
+number = -42 if opposite
+
 ### Functions
-more to come....
+
+####Javascript
+function square(x) { <br>
+  return x * x; <br>
+}; <br>
+
+####CoffeeScript
+square = (x) -> x * x
+
+###Arrays
+
+####Javascript
+var stuff = [1, 2, 3, 4, 5];
+
+####CoffeeScript
+stuff = [1, 2, 3, 4, 5]
 
 ## Further Reading
 
