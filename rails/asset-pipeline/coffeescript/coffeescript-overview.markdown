@@ -11,12 +11,12 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 #### Comparing CoffeeScript to Javascript
 -Assignment-
 Javascript: <br>
-var number = 1;
-var opposite = true;
+var number = 1; <br>
+var opposite = true; <br>
 
-CoffeeScript:
-number = 1
-opposite = true
+CoffeeScript: <br>
+number = 1 <br>
+opposite = true <br>
 
 more to come....
 
