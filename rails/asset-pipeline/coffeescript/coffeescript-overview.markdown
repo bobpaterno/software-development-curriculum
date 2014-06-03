@@ -10,7 +10,7 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 ## Comparing CoffeeScript to Javascript
 ### Assignments
 
-####Javascript ---------------CoffeeScript
+####Javascript \s\s\s\s\s\s\s CoffeeScript
 var number = 1; --------------number = 1 <br>
 var opposite = true; ---------opposite = true <br>
 
