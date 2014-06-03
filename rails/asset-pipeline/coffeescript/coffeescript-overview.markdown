@@ -53,6 +53,12 @@ var stuff = [1, 2, 3, 4, 5];
 ```shell
 stuff = [1, 2, 3, 4, 5]
 ```
+## Installation
+
+Since Rails 3.1 Coffee-Rails is included in the default Gemfile when you create a new application. If you are upgrading to Rails 3.1 you must add the coffee-rails to your Gemfile:
+
+    gem 'coffee-rails'
+
 ## Further Reading
 
 * [RailsCasts CoffeeScript Tutorial](http://railscasts.com/episodes/267-coffeescript-basics)
