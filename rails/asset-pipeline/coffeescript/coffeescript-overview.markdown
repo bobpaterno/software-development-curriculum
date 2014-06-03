@@ -10,13 +10,13 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 ### Assignments
 
 ####Javascript
-```shell
+```ruby
 var str = "hello"
 var number = 1; 
 var opposite = true;
 ```
 ####CoffeeScript
-```shell
+```ruby
 str = "hello"
 number = 1 
 opposite = true
@@ -24,7 +24,7 @@ opposite = true
 ### Conditions
 
 ####Javascript
-```shell
+```ruby
 if (opposite) { 
   number = -42; 
 } 
