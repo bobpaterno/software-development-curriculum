@@ -17,16 +17,16 @@ var opposite = true;
 ```
 ####CoffeeScript
 ```shell
-number = 1 <br>
-opposite = true <br>
+number = 1 
+opposite = true
 ```
 ### Conditions
 
 ####Javascript
 ```shell
-if (opposite) { <br>
-  number = -42; <br>
-} <br>
+if (opposite) { 
+  number = -42; 
+} 
 ```
 ####CoffeeScript
 ```shell
@@ -36,9 +36,9 @@ number = -42 if opposite
 
 ####Javascript
 ```shell
-function square(x) { <br>
-  return x * x; <br>
-}; <br>
+function square(x) { 
+  return x * x; 
+}; 
 ```
 ####CoffeeScript
 ```shell
