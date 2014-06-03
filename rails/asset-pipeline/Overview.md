@@ -14,7 +14,7 @@ It also adds the ability to write these assets in other languages and pre-proces
 *The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework into the sprockets-rails gem.
 
 ===========================
-##A Few Notible Features
+##A Few Notable Features
 
 - Preprocessing
 
