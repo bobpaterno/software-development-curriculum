@@ -28,11 +28,29 @@ You can now add ERB code to this file and it will be processed. For example, whe
 
 Sprockets handles dependency management in Rails. Sprockets is a tool for managing libraries of JavaScript (and CoffeeScript) code, declaring dependency management and include 3rd-party code. At its core, Sprockets makes a require method available inside your .js and .coffee files which can pull in the contents of an external file from your project or from a 3rd party gem.
 
+Sprockets will concatenate all JavaScript files into one master .js file and all CSS files into one master .css file. You can customize this strategy to group files any way you like. In production, Rails inserts an MD5 fingerprint into each filename so that the file is cached by the web browser. You can invalidate the cache by altering this fingerprint, which happens automatically whenever you change the file contents.
+
+- Fingerprinting
+
+Fingerprinting is a technique that makes the name of a file dependent on the contents of the file. When the file contents change, the filename is also changed. For content that is static or infrequently changed, this provides an easy way to tell whether two versions of a file are identical, even across different servers or deployment dates.
+The technique sprockets uses for fingerprinting is to insert a hash of the content into the name, usually at the end. For example a CSS file global.css
+
+##Great! So how do I use The Asset Pipeline?
+
+In previous versions of Rails, all assets were located in subdirectories of public such as images, javascripts and stylesheets. With the asset pipeline, the preferred location for these assets is now the app/assets directory. Files in this directory are served by the Sprockets middleware.
+
+Assets can still be placed in the public hierarchy. Any assets under public will be served as static files by the application or web server. You should use app/assets for files that must undergo some pre-processing before they are served.
+
+In production, Rails precompiles these files to public/assets by default. The precompiled copies are then served as static assets by the web server. The files in app/assets are never served directly in production.
 
 ##Further Reading
+
 Rails Assets Pipeline Cheat Sheet (Github gist:7332590)
-Sources
-Rails Guide: The Asset Pipeline
+
+##Sources
+
+http://guides.rubyonrails.org/asset_pipeline.html
+
 ===========================
 Tutorials Point: 
 
