@@ -9,12 +9,12 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 
 ## Overview
 #### Comparing CoffeeScript to Javascript
--Assignment-
-Javascript: <br>
+Assignment # <br>
+-Javascript- <br>
 var number = 1; <br>
 var opposite = true; <br>
 
-CoffeeScript: <br>
+-CoffeeScript- <br>
 number = 1 <br>
 opposite = true <br>
 
