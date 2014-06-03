@@ -68,7 +68,7 @@ Since Rails 3.1 Coffee-Rails is included in the default Gemfile when you create 
 
 ## Sources
 
-* 1
-* 2
-* 3
-* 4
+* [Official Coffeesript website](http://coffeescript.org/)
+* [CoffeeScript-Wikipedia](http://en.wikipedia.org/wiki/CoffeeScript)
+* [Six Revisions](http://sixrevisions.com/javascript/coffeescript-basics/)
+* [CoffeeScript and Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html)
