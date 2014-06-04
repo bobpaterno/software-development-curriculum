@@ -15,6 +15,8 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 ## Syntax
 
 ### Assignments
+In coffeescript, variable declarations and semicolons are not required.
+
 **CoffeeScript**
 ```javascript
 str = "hello"
@@ -60,16 +62,30 @@ function square(x) {
 **CoffeeScript**
 ```javascript
 stuff = [1, 2, 3, 4, 5]
+tenThings = range[1..10]
+nineThings = range[1...10]
 ```
 **Javascript**
 ```javascript
 var stuff = [1, 2, 3, 4, 5];
+var tenThings = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var nineThings = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+```
+
+### Objects
+**CoffeeScript**
+```javascript
+person = name: 'bob', age: 18, job: 'programmer'
+```
+**Javascript**
+```javascript
+var person = { name: 'bob', age: 18, job: 'programmer' };
 ```
 
 ## Special Rules
 
 ###Indentation
-Because brackets are not required for functions or objects, scope is defined by indention.
+Because brackets are not required for functions or objects, scope is defined by indention. If an object is split onto multiple lines commas are not necessary.
 
 **CoffeeScript**
 ```javascript
@@ -89,7 +105,7 @@ var add = function() {
     age: "bar"
   };
   
-  return obj;
+  console.log(obj);
 }
 ```
 
@@ -120,6 +136,21 @@ someString = "some words #{variable}"
 var someString = "some words " + variable;
 ```
 
+### This vs @, Arrows vs Hash Rockets
+In CoffeeScript the keyword **this** is replaced with the **@** character. 
+
+**CoffeeScript**
+```javascript
+@.name
+```
+**Javascript**
+```javascript
+this.name
+```
+
+In addition, you can specify between the default value of this (->) and the current value of this (=>) by using either the Arrow or Hash Rocket (also called a Fat Arrow) syntax, respectively.
+
+
 ## Installation
 
 Since Rails 3.1 Coffee-Rails is included in the default Gemfile when you create a new application. If you are upgrading to Rails 3.1 you must add the coffee-rails to your Gemfile:
@@ -130,6 +161,7 @@ Since Rails 3.1 Coffee-Rails is included in the default Gemfile when you create 
 
 * [RailsCasts CoffeeScript Tutorial](http://railscasts.com/episodes/267-coffeescript-basics)
 * [Tutsplus CoffeeScript Tutorial](http://code.tutsplus.com/tutorials/rocking-out-with-coffeescript--net-17027)
+* [Behavior of Fat Arrow](http://jaketrent.com/post/behavior-of-coffeescript-fat-arrow/)
 
 ## Sources
 
