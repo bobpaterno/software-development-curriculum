@@ -66,9 +66,11 @@ stuff = [1, 2, 3, 4, 5]
 var stuff = [1, 2, 3, 4, 5];
 ```
 
-### Special Rules
+## Special Rules
+
+###Indentation and Implicit Returns
 * Because brackets are not required scope is dictated by indention.
-* Coffeescript uses implicit return, meaning that something will always be returned even if the return keyword isn't used
+* CoffeeScript uses implicit return, meaning that something will always be returned even if the return keyword isn't used
 
 **CoffeeScript**
 ```javascript
@@ -80,6 +82,18 @@ add = (x, y) ->
 var add = function (x, y){
   return x + y;
 }
+```
+
+### String Interpolation
+* CoffeeScript supports string interpolation
+
+**CoffeeScript**
+```javascript
+someString = "some words #{variable}"
+```
+**Javascript**
+```javascript
+var someString = "some words " + variable;
 ```
 
 ## Installation
