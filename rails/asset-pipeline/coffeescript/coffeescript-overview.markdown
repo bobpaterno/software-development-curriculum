@@ -142,6 +142,35 @@ person = name: 'bob', age: 18, job: 'programmer'
 var person = { name: 'bob', age: 18, job: 'programmer' };
 ```
 
+### Iteration
+Arrays can be iterated using **in** and objects can be iterated using **of**.
+
+**CoffeeScript**
+```javascript
+alphabet = ["a", "b", "c"]
+print "Letter: #{letter}" for letter in alphabet
+```
+**Javascript**
+```javascript
+alphabet = ["a", "b", "c"];
+alphabet.forEach(function(letter){
+  print "Letter: " + letter;
+});
+```
+
+**CoffeeScript**
+```javascript
+people = 
+  bill:
+    name: 'bill'
+    age: 18
+  bob:
+    name: 'bob'
+    age: 21
+    
+print "#{person} is #{attrs.age} years old" for person, attrs of people
+```
+
 ## Special Rules
 
 ###Indentation
