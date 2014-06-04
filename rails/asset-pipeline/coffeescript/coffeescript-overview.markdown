@@ -6,55 +6,76 @@ and is essentially just a syntactic rewrite of JavaScript. The core language its
 Python and Ruby and implements many features from those two languages. The CoffeeScript compiler outputs clean JavaScript that follows best practices and is eminently readable; it also allows you to use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa).
 The compiled output is readable and pretty-printed, will work in every JavaScript runtime, and tends to run as fast or faster than the equivalent handwritten JavaScript.
 
-## Comparing CoffeeScript to Javascript
-### Assignments
+#### The main benefits of using Coffeescript instead of Javascript are:
+* You can use less code to solve the same problem
+* The code may be more readable
+* The code may be easier to maintain
 
-**Javascript**
-```javascript
-var str = "hello";
-var number = 1; 
-var opposite = true;
-```
+
+## Syntax
+
+#### Assignments
 **CoffeeScript**
 ```javascript
 str = "hello"
 number = 1 
 opposite = true
 ```
-### Conditions
+**Javascript**
+```javascript
+var str = "hello";
+var number = 1; 
+var opposite = true;
+```
 
+#### Conditions
+**CoffeeScript**
+```javascript
+number = -42 if opposite
+```
 **Javascript**
 ```javascript
 if (opposite) { 
   number = -42; 
 } 
 ```
+
+#### Functions
+* Functions are denoted with **->**
+* Parameters are defined before the function **(x) ->**
+* Parameters can also be set with default values **(x=2) ->**
 **CoffeeScript**
 ```javascript
-number = -42 if opposite
+square = (x) -> x * x
 ```
-### Functions
-
 **Javascript**
 ```javascript
 function square(x) { 
   return x * x; 
 }; 
 ```
-**CoffeeScript**
-```javascript
-square = (x) -> x * x
-```
-###Arrays
 
-**Javascript**
-```javascript
-var stuff = [1, 2, 3, 4, 5];
-```
+#### Arrays
 **CoffeeScript**
 ```javascript
 stuff = [1, 2, 3, 4, 5]
 ```
+**Javascript**
+```javascript
+var stuff = [1, 2, 3, 4, 5];
+```
+
+#### Indention
+Because brackets are not required scope is dictated by indention.
+**CoffeeScript**
+```javascript
+stuff = [1, 2, 3, 4, 5]
+```
+**Javascript**
+```javascript
+var stuff = [1, 2, 3, 4, 5];
+```
+
 ## Installation
 
 Since Rails 3.1 Coffee-Rails is included in the default Gemfile when you create a new application. If you are upgrading to Rails 3.1 you must add the coffee-rails to your Gemfile:
