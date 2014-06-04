@@ -33,6 +33,42 @@ var opposite = true;
 ### Conditions
 **CoffeeScript**
 ```javascript
+x == 2
+x is 2
+x isnt 3
+x != 3
+```
+**Javascript**
+```javascript
+x === 2;
+x === 2;
+x !== 3;
+x !== 3;
+```
+
+**CoffeeScript**
+```javascript
+not
+and
+or
+yes
+on
+no
+off
+```
+**Javascript**
+```javascript
+!
+&&
+||
+true
+true
+false
+false
+```
+
+**CoffeeScript**
+```javascript
 number = -42 if opposite
 ```
 **Javascript**
@@ -148,7 +184,7 @@ In CoffeeScript the keyword **this** is replaced with the **@** character.
 this.name
 ```
 
-In addition, you can specify between the default value of this (->) and the current value of this (=>) by using either the Arrow or Hash Rocket (also called a Fat Arrow) syntax, respectively.
+In addition, you can specify between the default value of this (->) and the current value of this (=>) by using either the Arrow or Hash Rocket (also called a Fat Arrow) syntax, respectively. In other words, when a fat arrow is used to bind a function, a _this reference is saved in the same context as the function that was declared.
 
 
 ## Installation
