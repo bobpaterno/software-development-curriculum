@@ -6,7 +6,7 @@ and is essentially just a syntactic rewrite of JavaScript. The core language its
 Python and Ruby and implements many features from those two languages. The CoffeeScript compiler outputs clean JavaScript that follows best practices and is eminently readable; it also allows you to use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa).
 The compiled output is readable and pretty-printed, will work in every JavaScript runtime, and tends to run as fast or faster than the equivalent handwritten JavaScript.
 
-#### The main benefits of using Coffeescript instead of Javascript are:
+### The main benefits of using Coffeescript instead of Javascript are:
 * You can use less code to solve the same problem
 * The code may be more readable
 * The code may be easier to maintain
@@ -14,7 +14,7 @@ The compiled output is readable and pretty-printed, will work in every JavaScrip
 
 ## Syntax
 
-#### Assignments
+### Assignments
 **CoffeeScript**
 ```javascript
 str = "hello"
@@ -28,7 +28,7 @@ var number = 1;
 var opposite = true;
 ```
 
-#### Conditions
+### Conditions
 **CoffeeScript**
 ```javascript
 number = -42 if opposite
@@ -40,10 +40,11 @@ if (opposite) {
 } 
 ```
 
-#### Functions
+### Functions
 * Functions are denoted with **->**
 * Parameters are defined before the function **(x) ->**
 * Parameters can also be set with default values **(x=2) ->**
+
 **CoffeeScript**
 ```javascript
 square = (x) -> x * x
@@ -55,7 +56,7 @@ function square(x) {
 }; 
 ```
 
-#### Arrays
+### Arrays
 **CoffeeScript**
 ```javascript
 stuff = [1, 2, 3, 4, 5]
@@ -65,15 +66,20 @@ stuff = [1, 2, 3, 4, 5]
 var stuff = [1, 2, 3, 4, 5];
 ```
 
-#### Indention
-Because brackets are not required scope is dictated by indention.
+### Special Rules
+* Because brackets are not required scope is dictated by indention.
+* Coffeescript uses implicit return, meaning that something will always be returned even if the return keyword isn't used
+
 **CoffeeScript**
 ```javascript
-stuff = [1, 2, 3, 4, 5]
+add = (x, y) ->
+  x + y
 ```
 **Javascript**
 ```javascript
-var stuff = [1, 2, 3, 4, 5];
+var add = function (x, y){
+  return x + y;
+}
 ```
 
 ## Installation
