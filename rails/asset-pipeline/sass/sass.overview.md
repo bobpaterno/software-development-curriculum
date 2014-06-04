@@ -24,19 +24,43 @@ Basic Install
 
 Varaibles
 ============
+Variables are a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the `$` symbol to make something a variable.
+
+example: 
+          
+          $font-stack:    Helvetica, sans-serif
+          $primary-color: #333
+          
+          body
+            font: 100% $font-stack
+            color: $primary-color
+            
+            
+Sass takes the variables we define for the $font-stack and $primary-color and puts normal CSS with our variable values placed in the CSS.
 
 Nesting
 ============
+Sass will let you nest your CSS selectors in a way that is similiar to the HTML/Jade visual hierarchy.
 
-Mixins
-============
+example:
 
-Extend/Inheritance
-============
+          nav 
+            ul
+              margin: 0
+              padding: 0
+              list-style: none
+          
+            li
+              display: inline-block
+          
+            a
+              display: block
+              padding: 6px 12px
+              text-decoration: none
+              
+In the example you can see how the `ul`, `li`, and `a` selectors are all nested inside of the `nav` selector. This is a awesome way to organize your CSS.
 
-Operators
-============
-
+Sass is awesome!
 
 Sources
 ============
