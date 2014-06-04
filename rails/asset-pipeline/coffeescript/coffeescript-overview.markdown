@@ -74,6 +74,11 @@ number = -42 if opposite
 if 1 < x < 10
   print(x)
 
+switch cupsOfCoffee
+ when 0 then 'Asleep'
+ when 1 then 'Eyes Open'
+ when 2 then 'Buzzed'
+ else 'Dangerous
 ```
 **Javascript**
 ```javascript
@@ -85,6 +90,16 @@ if (opposite) {
 if (1 < x && x < 10) {
  print(x);
 }
+
+switch (cupsOfCoffee) {
+ case 0:
+ return 'Asleep';
+ case 1:
+ return 'Eyes Open';
+ case 2:
+ return 'Buzzed';
+ default:
+ return 'Dangerous';
 ```
 
 ### Functions
