@@ -70,12 +70,21 @@ false
 **CoffeeScript**
 ```javascript
 number = -42 if opposite
+
+if 1 < x < 10
+  print(x)
+
 ```
 **Javascript**
 ```javascript
+var number;
 if (opposite) { 
   number = -42; 
 } 
+
+if (1 < x && x < 10) {
+ print(x);
+}
 ```
 
 ### Functions
