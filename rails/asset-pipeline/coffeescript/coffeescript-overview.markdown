@@ -78,7 +78,7 @@ switch cupsOfCoffee
  when 0 then 'Asleep'
  when 1 then 'Eyes Open'
  when 2 then 'Buzzed'
- else 'Dangerous
+ else 'Dangerous'
 ```
 **Javascript**
 ```javascript
