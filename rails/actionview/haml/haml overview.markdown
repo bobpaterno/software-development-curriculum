@@ -17,18 +17,18 @@ line to convert Haml files to HTML.
 ids and classes using # and . respectively. For instance, a div with the id of
 item and a class of inventory would be written as:
   
-  %div#item.inventory
+  ```%div#item.inventory```
 
 Note the div element mustn't explicitly be listed because divs are so commonly
 used. The above tag could also be written as:
   
-  #item.inventory
+  ```#item.inventory```
 
 Including a paragraph element with a class of description inside the above tag would
 be written as:
 
-  #item.inventory
-    %p.description
+  ```#item.inventory```
+    ```%p.description```
 
 The = sign is used to insert Ruby code into the Haml document to be evaluated
 and help dynamically alter the markup. The - sign is used to evaluate ruby code 
