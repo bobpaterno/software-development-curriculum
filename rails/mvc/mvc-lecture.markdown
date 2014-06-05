@@ -9,14 +9,14 @@ In addition to defining the three components, MVC describes the actual relations
 
 The Model serves as the central component. It's responsible for talking to the database and represents your
 applications business logic and data. In other words, your model should contain the code that you'd typically
-find in an object oriented class. In Rails, your model inherits from Active Record Base,
-which provides your model with methods for querying your database.
+find in an object oriented class. In Rails, your model can inherit from Active Record Base,
+which would provide your model with methods for querying your database.
 
 ## View
 
 Views are the presentation layer for the MVC pattern. The Rails default for views is ERB (Embedded Ruby).
 ERB is nothing more than a way for writing Ruby code within your HTML. For those who've used Jade, it's very similiar.
-Rails also provids helper functions that can be used in your view, and will be interpreted by the broswer as plain HTML.
+Rails also provides helper functions that can be used in your view, and will be interpreted by the broswer as plain HTML.
 
 ## Controller
 A controller does excatly what its name implies. It serves as the hub of your app, recieving and routing requests between routes,
