@@ -38,6 +38,6 @@ To call the "search" scope assuming this scope is written in a User model you wo
 * http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Named/ClassMethods.html
 * http://blog.plataformatec.com.br/2013/02/active-record-scopes-vs-class-methods/
 
-## Sources
+## Source
 
 * http://www.lynda.com/Ruby-Rails-tutorials/Named-scopes/139989/159102-4.html
