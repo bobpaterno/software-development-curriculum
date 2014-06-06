@@ -1,3 +1,5 @@
+http://24ways.org/2013/git-for-grownups/
+
 # Version Control with Git
 
 ## Why version control?

@@ -45,3 +45,7 @@ For commands that you use often, it can be convenient to create aliases (shortcu
     alias gl='git pull'
     alias gpr='git pull --rebase'
     alias gst='git status'
+
+### Dotmatrix
+
+Eliza's default setup is based on: https://github.com/hashrocket/dotmatrix
