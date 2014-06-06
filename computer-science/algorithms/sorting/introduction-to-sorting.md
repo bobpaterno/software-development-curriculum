@@ -30,7 +30,7 @@ A good video on how the insertion sort works is [Insertion Sort explained by App
 
 ######Below is a graphical represnetation of the insertion sort:
 
-![Example of Insertion Sort](Insertion_sort_animation.gif)
+![Example of Insertion Sort](insertion.gif)
 
 ## Selection Sort
 The selection sort works by dividing the input into two parts: the sublist of already sorted items and the unsorted list. It begins by looping through the entire unordered list and takes the smallest item in the list and swaps it with what ever was in the first postion. Once this happens you have your two parts, the sorted list and the unsorted list. This contiues until the entire set of data becomes sorted. Look below for a written example.
@@ -43,7 +43,7 @@ The selection sort works by dividing the input into two parts: the sublist of al
 	Result               1   4   4   5   8
 ######Below is a animated example of the Selection sort:
 
-![Example of Selection Sort](Selection_Sort_Animation.gif)
+![Example of Selection Sort](selection.gif)
 
 ## Merge Sort
 The merge sort conceptually works like:
@@ -54,7 +54,7 @@ The merge sort conceptually works like:
 
 The merge sort is easy to implment and can be best described as a divide and conquer algorith. It was invented by John von Nuemann in 1945. 
 ######Below is a representation of the Merge Sort:
-![Example of Merge Sort](Merge-Sort-example-300px.gif)
+![Example of Merge Sort](merge.gif)
 ## Quick Sort
 Quick sort works like this:
 
@@ -62,12 +62,12 @@ Quick sort works like this:
 2. Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
 3. Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
 ######Below is a animated showing of the Quick Sort:
-![Example of Quick Sort](QuickSort-example.gif)
+![Example of Quick Sort](quick.gif)
 
 ## Bubble Sort
 The bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted, comaprting each pair of adjacent items and swapping them if they are in the wrong order. Then the pass through the list is repeated until there are no swaps needed. 
 ######Below shows how the Bubble Sort works:
-![Example of Bubble Sort](Bubble-sort-example-300px.gif)
+![Example of Bubble Sort](bubble.gif)
 
 ## Bucket Sort
 Bucket sort works as follows:
@@ -78,7 +78,7 @@ Bucket sort works as follows:
 4. Gather: Visit the buckets in order and put all elements back into the original array.
 
 ######The image below shows how a Bucket Sort will break data into sets:
-![Example of Bucket Sort](Bucket_sort_2.png)
+![Example of Bucket Sort](bucket.png)
 
 ## Further Investigation
 - [Slightly Skeptical View on Sorting Algorithms](http://www.softpanorama.org/Algorithms/sorting.shtml)
