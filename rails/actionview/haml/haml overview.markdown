@@ -22,7 +22,7 @@ item and a class of inventory would be written as:
 Note the div element mustn't explicitly be listed because divs are so commonly
 used. The above tag could also be written as:
   
-  ```#item.inventory```
+  `#item.inventory`
 
 Including a paragraph element with a class of description inside the above tag would
 be written as:
