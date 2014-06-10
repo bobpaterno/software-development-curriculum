@@ -27,8 +27,8 @@ used. The above tag could also be written as:
 Including a paragraph element with a class of description inside the above tag would
 be written as:
 
-  ```#item.inventory
-       %p.description```
+  `#item.inventory
+       %p.description`
 
 The = sign is used to insert Ruby code into the Haml document to be evaluated
 and help dynamically alter the markup. The - sign is used to evaluate ruby code 
