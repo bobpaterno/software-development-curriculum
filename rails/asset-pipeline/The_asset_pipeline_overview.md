@@ -4,7 +4,6 @@ The asset pipeline is one of the biggest new features in Rails 3.1 that was desi
 The asset pipeline provides a framework to concatenate and minify or compress JavaScript and CSS assets. 
 It also adds the ability to write these assets in other languages and pre-processors such as CoffeeScript, Sass and ERB.
 
-==========================
 ##Good To Know
 
 - At its most basic the asset pipeline is a list of loadpaths. You can see this list by running the console and viewing   Rails.application.config.assets.paths.
