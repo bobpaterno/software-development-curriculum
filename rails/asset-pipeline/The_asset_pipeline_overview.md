@@ -47,7 +47,7 @@ In production, Rails precompiles these files to public/assets by default. The pr
 
 ##Further Reading
 
-Rails Assets Pipeline Cheat Sheet [This link](https://gist.github.com/reejosamuel/7332590/) has no title attribute. (Github gist:7332590)
+[Rails Asset Pipeline Cheat Sheet](https://gist.github.com/reejosamuel/7332590/) (Github gist:7332590)
 
 ##Sources
 
