@@ -9,14 +9,15 @@ It also adds the ability to write these assets in other languages and pre-proces
 ==========================
 ##Good To Know
 
-*At its most basic the asset pipeline is a list of loadpaths. You can see this list by running the console and viewing Rails.application.config.assets.paths.
+- At its most basic the asset pipeline is a list of loadpaths. You can see this list by running the console and viewing   Rails.application.config.assets.paths.
 
-*The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework into the sprockets-rails gem.
+- The asset pipeline is technically no longer a core feature of Rails 4, it has been extracted out of the framework      into the sprockets-rails gem.
 
 ===========================
 ##A Few Notable Features
 
-- Preprocessing
+Preprocessing
+---------------------------
 
 The file extensions used on an asset determine what preprocessing is applied. In development mode, or if the asset pipeline is disabled, when these files are requested they are processed by the processors provided by the coffee-script and sass gems and then sent back to the browser as JavaScript and CSS respectively. When asset pipelining is enabled, these files are preprocessed and placed in the public/assets directory for serving by either the Rails app or web server.
 
@@ -27,13 +28,14 @@ Keep in mind the order of these preprocessors is important. For example, if you 
 (erb stands for "Embedded RuBy". A .html.erb or .erb.html file is HTML with Ruby code embedded in; Rails will evaluate the Ruby to add content to the file dynamically, and will output a "pure" HTML file for rendering.)
 
 
-- Managing Assets With Sprockets
-
+Managing Assets With Sprockets
+---------------------------------
 Sprockets handles dependency management in Rails. Sprockets is a tool for managing libraries of JavaScript (and CoffeeScript) code, declaring dependency management and include 3rd-party code. At its core, Sprockets makes a require method available inside your .js and .coffee files which can pull in the contents of an external file from your project or from a 3rd party gem.
 
 Sprockets will concatenate all JavaScript files into one master .js file and all CSS files into one master .css file. You can customize this strategy to group files any way you like. In production, Rails inserts an MD5 fingerprint into each filename so that the file is cached by the web browser. You can invalidate the cache by altering this fingerprint, which happens automatically whenever you change the file contents.
 
-- Fingerprinting
+Fingerprinting
+---------------------------
 
 Fingerprinting is a technique that makes the name of a file dependent on the contents of the file. When the file contents change, the filename is also changed. For content that is static or infrequently changed, this provides an easy way to tell whether two versions of a file are identical, even across different servers or deployment dates.
 The technique sprockets uses for fingerprinting is to insert a hash of the content into the name, usually at the end. For example a CSS file global.css
@@ -48,7 +50,7 @@ In production, Rails precompiles these files to public/assets by default. The pr
 
 ##Further Reading
 
-Rails Assets Pipeline Cheat Sheet (Github gist:7332590)
+Rails Assets Pipeline Cheat Sheet [This link](https://gist.github.com/reejosamuel/7332590/) has no title attribute. (Github gist:7332590)
 
 ##Sources
 
