@@ -1,5 +1,3 @@
-#Overview of Asset Pipeline
-==========================
 ##What is The Asset Pipeline?
 
 The asset pipeline is one of the biggest new features in Rails 3.1 that was designed to manage your Rails applications’ assets. 
