@@ -1,14 +1,14 @@
 # Deploying to Heroku
 
-### Getting Started
+## Getting Started
 
 - [Sign up](https://signup.heroku.com/signup/dc) for Heroku
 - Download the [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - Login via the toolbelt in your command shell: `$ heroku login`
 
-### Deploying a Rails app
+## Deploying a Rails app
 
-#### Heroku Gems & Postgres
+### Heroku Gems & Postgres
 Since Rails 4, Heroku requires the rails_12factor gem to enable certain features. Install the gem into your Gemfile in a produciton group
 
 `gem 'rails_12factor', group: :production`
@@ -17,36 +17,40 @@ Heroku utilizes PostgreSQL database to run your app in deployment. It is therefo
 
 Add:
 `gem 'pg'`
+
 Remove:
 `gem 'sqlite3'`
 
 In addition, you'll need to update your config/database.yml to use the postgresql adapter
 
-  <blockquote>
-    default: &default
-      adapter: postgresql
-       encoding: unicode
-  </blockquote>
+  default: &default
+    adapter: postgresql
+    encoding: unicode
   
-#### Deploying the code
+### Deploying the code
 
 Ok, finally time to actually deploy the code.
 
-**Make sure git is clean locally and changes are merged into the branch you delpoy from**
+**Make sure git is clean locally and changes are merged into the branch you deploy from**
 
 `heroku create <app name>`
+
 `git push heroku master`
+
 Tell Heroku to setup postgres for the app:
+
 `heroku addons:add heroku-postgresql`
+
 `heroku run rake db:migrate`
 
 If your database needs to be seeded:
+
 `heroku run rake db:seed`
 
 That's it! Go visit your app on the webs!
 
 
-### Resources & Additional Reading
+## Resources & Additional Reading
 https://toolbelt.heroku.com/
 
 https://devcenter.heroku.com/articles/keys
