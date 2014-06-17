@@ -12,3 +12,5 @@ Note: there are/should be articles with an introduction to each type of database
 ### Graph Databases
 
 ### Object Databases
+
+### Relational Databases
