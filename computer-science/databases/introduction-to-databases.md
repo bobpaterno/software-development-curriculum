@@ -6,3 +6,9 @@
 ## What are the types of databases?
 
 Note: there are/should be articles with an introduction to each type of database/
+
+### Document Databases
+
+### Graph Databases
+
+### Object Databases
