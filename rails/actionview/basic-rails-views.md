@@ -6,8 +6,11 @@
 
 ### HAML
 
+## Layouts
 
-## Form Builders
+## Partials
+
+## Forms and Form Builders
 
 ### Rails form builder
 
