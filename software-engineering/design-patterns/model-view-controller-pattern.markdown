@@ -1,4 +1,4 @@
-# MVC
+# Model View Controller Pattern (MVC)
 
 ## Overview
 MVC, which stands for Model, View, Controller, is an architecture pattern for organizing software applications.
