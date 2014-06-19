@@ -22,8 +22,6 @@ You should be able to touch type with a fairly good pace.  You should practice g
 
 I don't care what text editor you use, as long as you're using it to hone your skills.  This means learning how to use keyboard shortcuts and learning to navigate without your hands leaving the keyboard (i.e. without a mouse).
 
-### Vim
-
 I (Eliza), personally use vim as my text editor.  You can use vim tutor and vim adventures if you want to try it out.
 
 ## Unix Shell
@@ -32,7 +30,7 @@ Bash and Zsh are two populate shells.  I don't care which you use, just so long 
 
 ### Aliases
 
-For commands that you use often, it can be convenient to create aliases (shortcuts to commands).  For example, from Eliza's aliases from her ~/.bashrc :
+For commands that you use often, it can be convenient to create aliases (shortcuts to commands).  For example, from Eliza's aliases from her `~/.bashrc` :
 
     alias gb='git branch'
     alias gc='git commit -v'
@@ -48,4 +46,4 @@ For commands that you use often, it can be convenient to create aliases (shortcu
 
 ### Dotmatrix
 
-Eliza's default setup is based on: https://github.com/hashrocket/dotmatrix
+Eliza's default setup is based on: [Hashrocket's Dotmatrix](https://github.com/hashrocket/dotmatrix).
