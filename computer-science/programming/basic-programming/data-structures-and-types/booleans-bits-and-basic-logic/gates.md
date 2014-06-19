@@ -6,7 +6,7 @@ The inputs to gates come from the left side and the output comes out the right. 
 
 ## AND
 
-![AND Gate](wikimedia-commons-venn-AND.png "AND")
+![AND Gate](wikimedia-commons-venn-and.png "AND")
 
 A truth table illustrating AND:
 
@@ -18,7 +18,7 @@ A truth table illustrating AND:
 
 ## OR
 
-![OR Gate](wikimedia-commons-venn-OR.png "OR")
+![OR Gate](wikimedia-commons-venn-or.png "OR")
 
 A truth table illustrating this:
 
@@ -30,7 +30,7 @@ A truth table illustrating this:
 
 ## NOT
 
-![NOT Gate](wikimedia-commons-venn-NOT.png "NOT")
+![NOT Gate](wikimedia-commons-venn-not.png "NOT")
 
 !A is true if A is false
 
@@ -43,7 +43,7 @@ A truth table illustrating this:
 
 ## XOR
 
-![XOR Gate](wikimedia-commons-venn-XOR.png "XOR")
+![XOR Gate](wikimedia-commons-venn-xor.png "XOR")
 
 A truth table illustrating this:
 
