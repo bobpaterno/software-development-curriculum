@@ -30,7 +30,7 @@ A truth table illustrating this:
 
 ## NOT
 
-![NOT Gate](wikimedia-commons-venn-not.png "NOT")
+![NOT Gate](wikimedia-commons-venn-not-a.png "NOT")
 
 !A is true if A is false
 
