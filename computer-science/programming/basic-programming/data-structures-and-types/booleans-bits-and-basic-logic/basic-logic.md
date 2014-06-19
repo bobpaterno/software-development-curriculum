@@ -95,7 +95,7 @@ For example:
 
 A && B || C  is not equivalent to A && (B || C)
 
-	| A | B | C | A && B || C | A && (B ||r C) |
+	| A | B | C | A && B || C | A && (B || C) |
 	| 0 | 0 | 1 | 1           | 0              |
 	| 0 | 1 | 0 | 0           | 0              |
 	| 0 | 1 | 1 | 1           | 0              |
