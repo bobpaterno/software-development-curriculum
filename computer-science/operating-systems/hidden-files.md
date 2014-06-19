@@ -4,14 +4,14 @@ In Unix-based operating systems (e.g. Ubuntu and OS X), files that begin with a 
 
 For example, if I run `ls` in a directory with the files `.myhiddenfile.txt` and `someotherfile.txt`, I would see:
 
-  > ls
-  someotherfile.txt
+    > ls
+    someotherfile.txt
   
 If I instead used the `-a` flag, ( `ls -a`) I would see:
 
-  > ls -a
-  .myhiddenfile.txt
-  someotherfile.txt
+    > ls -a
+    .myhiddenfile.txt
+    someotherfile.txt
 
 In graphical file system browsers, such as Ubuntu Filesystem Browser, and OS X's Finder.app, you can change the preferences in order to make hidden files visible.
 
