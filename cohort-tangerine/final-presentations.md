@@ -25,31 +25,32 @@ Each presentation should take approximately 5 minutes and cover the following ma
 
 # Presentation Order
 
-  1 Mitch (10:05 - 10:10)
-  2 Nat (10:15 - 10:20)
-  3 James (10:25 - 10:30)
-  4 Sam T (10:35 - 10:40)
-  5 Giovanni (10:45 - 10:50)
+  1. Mitch (10:05 - 10:10)
+  2. Nat (10:15 - 10:20)
+  3. James (10:25 - 10:30)
+  4. Sam T (10:35 - 10:40)
+  5. Giovanni (10:45 - 10:50)
 
-* Break *
+### Break
 
-  6 Aimee (11:00 - 11:10)
-  7 Adam (11:15 - 11:20)
-  8 Drew (11:25 - 11:30)
-  9 Jeremy (11:35 - 11:40)
-  10 Matt K (11:45 - 11:50)
+  6. Aimee (11:00 - 11:10)
+  7. Adam (11:15 - 11:20)
+  8. Drew (11:25 - 11:30)
+  9. Jeremy (11:35 - 11:40)
+  10. Matt K (11:45 - 11:50)
 
-* Lunch *
+### Lunch
 
-  11 Tyler (1:05 - 1:10)
-  12 Max (1:15 - 1:20)
-  13 Randy (1:25 - 1:30)
-  14 Matt L (1:35 - 1:40)
-  15 Peder (1:45 - 1:50)
+  11. Tyler (1:05 - 1:10)
+  12. Max (1:15 - 1:20)
+  13. Randy (1:25 - 1:30)
+  14. Matt L (1:35 - 1:40)
+  15. Peder (1:45 - 1:50)
 
-* Break *
+### Break
 
-  16 Robert (2:05 - 2:10)
-  17 Steven (2:15 - 2:20)
-  18 Spencer (2:25 - 2:30)
-  19 Sam W. (2:35 - 2:40)
+  16. Robert (2:05 - 2:10)
+  17. Steven (2:15 - 2:20)
+  18. Spencer (2:25 - 2:30)
+  19. Sam W. (2:35 - 2:40)
+
